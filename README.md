@@ -54,6 +54,9 @@
 *个人非常不推荐使用玄冰 400 散热器（不含扣具升级款），我已经更换为利民 AS120，远离反人类设计保平安。*
 
 ## 更新记录
+#### 2020.04.13
+基于原版修改，更新 OpenCore 至 0.5.7 正式版，添加 NVMEFix.kext 并移除 CpuFriend.kext，更新其他 Kexts 至官方最新版，修复定时睡眠无法唤醒、启动磁盘无法切换等问题。
+
 #### 2020.03.03
 更新 OpenCore 至 0.5.6 正式版；更新 Lilu / AppleALC / WhateverGreen 等 Kexts 至官方最新版；更新 ApfsDriverLoader / HfsPlus / FwRuntimeServices 等驱动至最新版；添加 ExFatDxe 驱动，同步添加 `/EFI/OC/config.plist`文件 EFI > Drivers > 2: ExFatDxe.efi；更新 Shell / VerifyMsrE2 等工具至最新版；移除`/EFI/OC/Tools/memtest.efi`文件，同步移除`/EFI/OC/config.plist`文件 Misc > Tools > 2 条目。<br>
 *OC 0.5.6 正式版的配置文件新增和删除了若干条目，建议按照使用习惯重新配置。目前已支持 ~~bugOS~~macOS 10.15.4，正式版发布后可直接升级。*
